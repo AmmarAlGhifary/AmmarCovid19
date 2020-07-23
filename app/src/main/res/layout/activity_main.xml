@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lay_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_search_country"
+            android:textCursorDrawable="@null"
+            app:actionViewClass="android.widget.SearchView"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Cari Negara" />
+
+        <Button
+            android:id="@+id/btn_sequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_weight="10"
+            android:background="@drawable/ic_sequence" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_globe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_search"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:background="@drawable/bg_purple"
+        android:orientation="horizontal">
+
+        <!--        region text confirmed-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/confirmed"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_confirmed_globe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:text="@string/_12_000_000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/recovered"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_recovered_globe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:text="@string/_12_000_000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/deaths"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_deaths_globe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:text="@string/_12_000_000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_globe"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_weight="4"
+            android:text="Countries"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_weight="5"
+            android:text="Cases"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_weight="5"
+            android:text="Recover"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_weight="5"
+            android:text="@string/deaths"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_header"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp4">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_country" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

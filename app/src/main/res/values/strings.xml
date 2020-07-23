@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AmmarCovid19</string>
+
+    <string name="countries">Countries</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="recovered">Recovered</string>
+
+    <string name="deaths">Deaths</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="_12_000_000">12.000.000</string>
+
+    <string name="country_name">Country Name</string>
+    <string name="currently">CURRENTLY</string>
+    <string name="total_confirmed">Total Confirmed</string>
+
+    <string name="new_confirmed">New Confirmed</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="new_deaths">New Deaths</string>
+
+    <string name="total_recovered">Total Recovered</string>
+    <string name="new_recovered">New Recovered</string>
+
+</resources>

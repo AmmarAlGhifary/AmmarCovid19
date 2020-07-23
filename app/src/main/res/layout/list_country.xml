@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/globe_globe_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/bg_header_gray"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_flag_country"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp4"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:text="@string/countries"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_total_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:text="@string/total_cases"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/txt_total_recovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:text="@string/recovered"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/txt_total_deaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:text="@string/deaths"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+</LinearLayout>
